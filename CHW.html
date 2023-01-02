@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZoeLo</title>
+    <link rel="stylesheet" href="uikit/dist/css/uikit.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="uikit/dist/js/uikit.min.js"></script>
+    <script src="uikit/dist/js/uikit-icons.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/logo.svg">
+</head>
+
+<header>
+    <div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar sidenav-bar">
+            <ul class="uk-nav uk-nav-default ">
+                <li><a class="sidenav-text uk-text-default" href="#">about</a></li>
+                <li><a class="sidenav-text uk-text-default" href="#">Projects</a></li>
+                <li><a class="sidenav-text uk-text-default" href="#">Playground</a></li>
+                <li><a class="sidenav-text uk-text-default" href="#">Resume</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- mobile -->
+    <div id="DivMobileNav" class="uk-navbar-container uk-hidden@s" uk-navbar>
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-toggle="target: #sidenav" uk-navbar-toggle-icon></a>
+        </div>
+        <div class="uk-navbar-center">
+            <a class="uk-navbar-item uk-logo" href="#"><img src="images/logo.svg" width="36px"></a>
+        </div>
+    </div>
+    <!-- desktop -->
+    <nav class="uk-navbar-container uk-navbar-transparent uk-visible@s" uk-navbar uk-sticky>
+        <div class="uk-navbar-center">
+            <div class="uk-navbar-center-left">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#">About</a></li>
+                    <li>
+                        <a href="#">Projects</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="uk-navbar-item uk-logo" href="#"><img src="images/logo.svg" width="36px"></a>
+
+            <div class="uk-navbar-center-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="#">Playground</a></li>
+                    <li class=""><a href="#">Resume</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+</header>
+
+<body>
+    <div class="uk-container uk-text-center uk-padding">
+        <h2>Cheng Hsin General Hospital</h2>
+        <h3>Responsive Web Design</h3>
+    </div>
+    <div class="uk-container-expand c-dark">
+        <img src="Images/CHW00.png" class="uk-width-1-1">
+    </div>
+    <!-- overview -->
+    <div id="DivOverview" class="uk-container uk-container-small uk-padding-large">
+        <div class="uk-grid-column-small uk-grid-row-large  uk-text-left uk-padding card-border" uk-grid>
+            <div class="uk-margin-auto-vertical uk-width-2-3@m">
+                <div class="uk-padding-small ">
+                    <h3>Overview</h3>
+                    <p>
+                        Cheng Hsin General Hospital is a modern general hospital located in Taipei, and it is famous for
+                        cardiology.
+                        The goal of this project was to build a responsive website featuring the new international
+                        medical services and provide more convenient online services for the general public
+                    </p>
+                </div>
+            </div>
+            <div class="uk-margin-auto-vertical uk-width-1-3@m">
+                <div class="uk-padding-small">
+                    <h3>Role</h3>
+                    <label>UI/UX Designer<br>
+                        Web Developer</label>
+                    <h3>Date</h3>
+                    <label>June 2019 - Oct 2020</label>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- background -->
+    <div id="DivBackground" class="uk-container uk-container-small uk-padding-large">
+        <h3>Background</h3>
+        <p>The previous hospital website was built almost ten years ago. Since the hospital's services had expanded, the
+            old website could no longer support the vast information. For example, the newly established International
+            Medical Services Center required a multi-language website for international patients. Moreover, it was
+            highly inconvenient to departments that they couldn't edit their information anytime on the old website
+            because it was outsourced. The project includes four websites: The Official Website, a Multi-Language
+            Website, Departments Websites, and a Content Management System.</p>
+        <p>I was the sole designer alongside one system analyst and three web developers in the initial stage of the
+            project. I was the only one left completing the remaining codes and maintaining the website in the late
+            stage. My key achievements are listed as below:</p>
+        <ul class="uk-list uk-list-square">
+            <li>Integrated the needs of various departments.</li>
+            <li>Executed from design to web development.</li>
+            <li>Improved usability according to feedbacks from users solely.</li>
+        </ul>
+    </div>
+
+    <!-- information architecture -->
+    <div id="DivIA" class="uk-container uk-container-small uk-padding-large">
+        <h3>Redesign Process&nbsp;&nbsp;/&nbsp;&nbsp;<span>Information Architecture</span></h3>
+        <div class="uk-padding">
+            <h4>The Official Website</h4>
+            <p>After understanding the old website's structure, I added components and categorized the information.
+                For
+                instance, people can find common services under the Health Information section.  In addition, I
+                canceled
+                the subscription function since no more than a hundred people were still subscribing. Instead, I
+                added a
+                section for the general public to download the newsletters.</p>
+            <img src="Images/IA_CHW.svg" class="uk-width-1-1">
+        </div>
+        <div class="uk-padding">
+            <h4>Multi-Language Website</h4>
+            <p>The international website was designed to provide simpler but useful and clear information. As for
+                the
+                Leading Specialties, editors have two options for adding content. One is to select articles from the
+                departments' websites, which departments' members edited, and insert them into the section; the
+                other is
+                to insert brand new articles. </p>
+            <img src="Images/IA_ihs.svg" class="uk-width-1-1">
+        </div>
+        <div class="uk-padding">
+            <h4>Departments Websites</h4>
+            <p>About is the homepage of the website. The eight sections below are the functions the website
+                provides.
+                Every department can choose to add or remove the sections. For example, editors can remove the
+                Events
+                link from the menu if a department doesn't want to include event information or doesn't even hold
+                events.</p>
+            <img src="Images/IA_dept.svg" class="uk-width-1-1">
+        </div>
+        <div class="uk-padding">
+            <h4>Content Management Website</h4>
+            <p>The website includes content management and authority management function. By defining each role's
+                access
+                to the website’s contents and assigning roles to accounts, employees in the hospital can log in to
+                the
+                system and edit the parts they are responsible for.</p>
+        </div>
+
+    </div>
+
+
+    <!-- lo-fi -->
+    <div id="DivLowFidelity" class="uk-container uk-container-small uk-padding-large">
+        <h3>Redesign Process&nbsp;&nbsp;/&nbsp;&nbsp;<span>Low-fidelity Prototyping</span></h3>
+        <p>With the clock ticking, I quickly drew the flows and confirmed with the system analyst that the database
+            design would support the functions I wanted to provide to the users. </p>
+        <img src="Images/CHW_wireframing.png" class="uk-width-1-1">
+    </div>
+
+    <!-- high-fi -->
+    <div id="DivHighFidelity" class="uk-container uk-container-small uk-padding-large">
+        <h3>Redesign Process&nbsp;&nbsp;/&nbsp;&nbsp;<span>High-fidelity Prototyping</span></h3>
+        <p>High-fidelity Prototyping allowed me to discuss the details and styling of content on different screen sizes
+            with the deputy superintendent. Based on the hospital's logo, which contains an orchid with a tenet meant to
+            serve the public with charity, I opted for a warm look to convey the aim to the general public.</p>
+        <img src="Images/CHW_highfidelity.png" class="uk-width-1-1">
+    </div>
+
+    <!-- design -->
+    <div id="DivDesign" class="uk-container uk-container-small uk-padding-large">
+        <h3>Redesign Process&nbsp;&nbsp;/&nbsp;&nbsp;<span>Designs</span></h3>
+        <div class="uk-padding">
+            <h4>Multi-Language Website</h4>
+            <p>Users can switch languages from the upper right corner on every page. The editors can edit the specific
+                language page instead of inserting information for all three languages. When a user switches the
+                language on a page with no corresponding language, the user will be redirected to the previous page.</p>
+            <img src="Images/CHW_09.webp" class="uk-width-1-1">
+        </div>
+        <div class="uk-padding">
+            <h4>The Official Website&nbsp;&nbsp;/&nbsp;&nbsp;Newsletter</h4>
+            <p>The newest volume is displayed at the top. When a mouse hovers over a volume, it will flip to show its
+                title and summary. People can download them simply with a click.</p>
+            <img src="Images/CHW_13.webp" class="uk-width-1-1">
+        </div>
+        <div class="uk-padding">
+            <h4>404 Not Found</h4>
+            <p>To create a good experience for users, I customized a 404 page to inform them that the article is gone.
+            </p>
+            <video src="Images/errorpage.mp4" width="1800" loop muted playsinline uk-video="autoplay: inview"></video>
+        </div>
+
+
+    </div>
+
+    <!-- Development -->
+    <div id="DivDevelopment" class="uk-container uk-container-small uk-padding-large">
+        <h3>Development</h3>
+        <p>Our team used .NET to build the four websites. As soon as I confirmed the design, I started to develop the
+            websites with HTML, CSS, and JavaScript. Other engineers started from the back-end codes. The schedule was
+            intense. Due to the time limit, we were developing and testing simultaneously. When the project was about
+            80% to completion, my teammates withdrew from the project to work on other systems. I finished the websites
+            and published them on my own. In the development process, I received feedback directly and improved the
+            functions at every stage by collecting their demands.</p>
+    </div>
+
+    <!-- Results -->
+    <div id="DivResults" class="uk-container uk-container-small uk-padding-large">
+        <h3>Results</h3>
+        <p>Since implementing the new responsive website, we have seen a significant increase in online appointments and
+            international patients. In addition, I have received positive feedback from the users about the concise and
+            straightforward functions, allowing them to show people their features and saving them a large proportion of
+            their time.</p>
+    </div>
+
+    <div class="uk-container uk-container-small uk-padding-large">
+        <img src="Images/CHW_05.webp" class="uk-width-1-1">
+    </div>
+
+</body>
+
+<footer>
+    <div class="uk-text-center uk-padding">© 2022. All Rights Reserved to Zoe Lo.</div>
+</footer>
+
+<script>
+    window.onscroll = function (e) {
+        let nav = document.querySelector("nav");
+        if (window.scrollY > 0) {
+            nav.classList.add("nav-scroll");
+        } else {
+            nav.classList.remove("nav-scroll");
+        }
+    }
+
+</script>
+
+</html>

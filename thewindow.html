@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZoeLo</title>
+    <link rel="stylesheet" href="uikit/dist/css/uikit.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="uikit/dist/js/uikit.min.js"></script>
+    <script src="uikit/dist/js/uikit-icons.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/logo.svg">
+</head>
+
+<header>
+    <div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar sidenav-bar">
+            <ul class="uk-nav uk-nav-default ">
+                <li><a class="sidenav-text uk-text-default" href="about.html">about</a></li>
+                <li><a class="sidenav-text uk-text-default" href="projects.html">Projects</a></li>
+                <li><a class="sidenav-text uk-text-default" href="playground.html">Playground</a></li>
+                <li><a class="sidenav-text uk-text-default" href="file/Resume_UXEngineer_ZoeLo_p.pdf"
+                        target="_blank">Resume</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- mobile -->
+    <div id="DivMobileNav" class="uk-navbar-container uk-hidden@s" uk-navbar>
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-toggle="target: #sidenav" uk-navbar-toggle-icon></a>
+        </div>
+        <div class="uk-navbar-center">
+            <a class="uk-navbar-item uk-logo" href="Index.html"><img src="images/logo.svg" width="36px"></a>
+        </div>
+    </div>
+    <!-- desktop -->
+    <nav class="uk-navbar-container uk-navbar-transparent uk-visible@s" uk-navbar uk-sticky>
+        <div class="uk-navbar-center">
+            <div class="uk-navbar-center-left">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="about.html">About</a></li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="uk-navbar-item uk-logo" href="Index.html"><img src="images/logo.svg" width="36px"></a>
+
+            <div class="uk-navbar-center-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="playground.html">Playground</a></li>
+                    <li class=""><a href="file/Resume_UXEngineer_ZoeLo_p.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+</header>
+
+<body>
+    <div class="uk-container uk-text-center uk-padding">
+        <h2>The Window</h2>
+        <h3>Installation Art</h3>
+    </div>
+    <div class="uk-container-expand c-dark">
+        <img src="Images/TW_01.JPG" class="uk-width-1-1">
+    </div>
+    <!-- overview -->
+    <div id="DivOverview" class="uk-container uk-container-small uk-padding-large">
+        <div class="uk-grid-column-small uk-grid-row-large  uk-text-left uk-padding card-border" uk-grid>
+            <div class="uk-margin-auto-vertical uk-width-2-3@m">
+                <div class="uk-padding-small ">
+                    <h3>Overview</h3>
+                    <p>
+                        In the daytime, The Window is no different from other windows. Serving as an exit of our visions, we can see through it clearly. Nonetheless, when it comes to nighttime, the lights are lit, and it loses its penetration characteristics. The Window merges the city lights into a glossy surface, which hides the invisible emptiness behind it.
+                    </p>
+                    <p>The Window is an installation artwork glowing in the nighttime. We used Arduino to control the pwm signal.</p>
+                </div>
+            </div>
+            <div class="uk-width-1-3@m">
+                <div class="uk-padding-small">
+                    <h3>Role</h3>
+                    <label>Team Leader<br>
+                        Coder<br>
+                        Creator</label>
+                    <h3>Date</h3>
+                    <label>March 2017 - June 2017</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- video -->
+    <div id="DivVideo" class="uk-container uk-container-small uk-padding-large">
+        <iframe src="https://www.youtube.com/embed/J10e9a6VZ8Q" width="1920" height="1080" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen uk-responsive></iframe>
+    </div>
+
+
+
+    <!-- creating process -->
+    <div id="DivCreatingProcess" class="uk-container uk-container-small uk-padding-large">
+        <h3>Creating Process</h3>
+        <p>To make the three meters tall installation stand in the wind, we sought advice from an iron factory professional. To make it stand in the rain, we applied waterproof measures. We laser cut small dots on Acrylic to make the whole area shine, and we used Arduino to control the light. Sitting in front of The Window, I solely defined the lighting styles and wrote the codes.</p>
+        <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@m uk-text-left" uk-grid>
+            <div><img src="Images/TW_05.JPG" class="uk-width-1-1"></div>
+            <div><img src="Images/TW_06.JPG" class="uk-width-1-1"></div>
+            
+        </div>
+        
+    </div>
+
+    <!-- achievements -->
+    <div id="DivAchievements" class="uk-container uk-container-small uk-padding-large">
+        <h3>Achievements</h3>
+        <p>1st KuanDu Light Art Festival<br/>
+            2017 Nuit Blanche Taipei<br/>
+            Tsing Hua Effects 2018 – IoT Technology and Art Festival</p>
+    </div>
+
+    
+
+
+    
+
+    <div class="uk-container uk-container-small uk-padding-large">
+        <img src="Images/TW_04.JPG" class="uk-width-1-1">
+    </div>
+
+</body>
+
+<footer>
+    <div class="uk-text-center uk-padding">© 2022. All Rights Reserved to Zoe Lo.</div>
+</footer>
+
+<script>
+    window.onscroll = function (e) {
+        let nav = document.querySelector("nav");
+        if (window.scrollY > 0) {
+            nav.classList.add("nav-scroll");
+        } else {
+            nav.classList.remove("nav-scroll");
+        }
+    }
+
+</script>
+
+</html>

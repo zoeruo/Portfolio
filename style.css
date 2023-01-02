@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+body {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+.c-pink {
+    background-color: #F5DDDD;
+}
+
+.c-dark {
+    background-color: #3A4454;
+}
+
+.c-lightblue{
+    color:#48acf0;
+}
+
+#DivCampaign {
+    padding: 50px;
+}
+
+@media(min-width: 960px) {
+    #DivCampaign {
+        padding: 100px;
+    }
+}
+
+#DivCampaign span {
+    cursor: pointer;
+    color: #F5DDDD;
+    border-bottom: 2px #3a4454 dashed;
+}
+
+#DivCampaign span:hover {
+    color: black;
+}
+
+#DivC #DivProjects h3 {
+    margin-top: 10px;
+    color: black;
+}
+
+#DivProjects h3 a {
+    color: black;
+}
+
+#DivProjects h3 a:hover {
+    text-decoration: none;
+    color: #3a4454;
+}
+
+.nav-scroll {
+    background-color: white;
+    opacity: 0.95;
+    box-shadow: 0px 1px 2px 1px rgb(0 0 0 / 20%)
+}
+
+#DivMobileNav {
+    padding: 0 20px;
+}
+
+/* #DivMobileNav .uk-navbar-item,
+.uk-navbar-nav>li>a,
+.uk-navbar-toggle {
+    min-height: 60px;
+} */
+
+.sidenav-bar {
+    background-color: #f8f8f8;
+}
+
+.sidenav-text {
+    color: #333 !important;
+}
+
+.card-border {
+    border: dashed 2px #d9dbf1;
+    border-radius: 10px;
+}
+
+h3 span {
+    background-color: #d9dbf1;
+    padding: 0 6px;
+}
+
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    display: flex;
+    background: #000;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  } */
+
+#Divtitle {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    min-height: 60vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content {
+    position: relative;
+}
+
+.content h2 {
+    color: #fff;
+    font-size: 6rem;
+    font-weight: 600;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-family: "Poppins", sans-serif;
+}
+@media(max-width: 960px) {
+    #Divtitle {
+        min-height:40vh;
+    }
+    .content h2 {
+        font-size:4rem;
+    }
+}
+
+.content h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #48acf0;
+}
+
+.content h2:nth-child(2) {
+    transform: translate(-50%, -82%);
+    color: #48acf0;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        clip-path: polygon(0% 35%,
+                16% 34%,
+                33% 50%,
+                54% 60%,
+                70% 61%,
+                84% 42%,
+                100% 36%,
+                100% 100%,
+                0% 100%);
+    }
+
+    50% {
+        clip-path: polygon(0% 60%,
+                15% 65%,
+                34% 66%,
+                51% 62%,
+                67% 50%,
+                84% 45%,
+                100% 46%,
+                100% 100%,
+                0% 100%);
+    }
+}
+
+
+.div_bubble{
+    position:relative;
+}
+
+.div_bubble_img {
+    /* background-image: url('Images/CHW.png'); */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+}
+
+.overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+  }
+
+  .overlay label{
+    color:black;
+
+  }
+/* .waves {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    
+}
+
+.waves_animation {
+    background-color: #48acf0;
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    animation: animate 4s ease-in-out infinite;
+} */
+
+.div_bubble:hover .div_bubble_img {
+    opacity: 0.3;
+}
+
+.div_bubble:hover .overlay {
+    opacity: 1;
+}
+
+@media(max-width: 960px) {
+    .uk-padding{
+        padding:10px;
+    }
+}
+
+.div_creating_process_container{
+    display:flex;
+}
+
+.div_creating_process {
+    background-color:#bfb1c1;
+    width: 20%;
+    padding-top: 20%;
+    border-radius: 50%;
+}

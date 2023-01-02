@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZoeLo</title>
+    <link rel="stylesheet" href="uikit/dist/css/uikit.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="uikit/dist/js/uikit.min.js"></script>
+    <script src="uikit/dist/js/uikit-icons.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/logo.svg">
+</head>
+
+<header>
+    <div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar sidenav-bar">
+            <ul class="uk-nav uk-nav-default ">
+                <li><a class="sidenav-text uk-text-default" href="about.html">about</a></li>
+                <li><a class="sidenav-text uk-text-default" href="projects.html">Projects</a></li>
+                <li><a class="sidenav-text uk-text-default" href="playground.html">Playground</a></li>
+                <li><a class="sidenav-text uk-text-default" href="file/Resume_UXEngineer_ZoeLo_p.pdf"
+                        target="_blank">Resume</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- mobile -->
+    <div id="DivMobileNav" class="uk-navbar-container uk-hidden@s" uk-navbar>
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-toggle="target: #sidenav" uk-navbar-toggle-icon></a>
+        </div>
+        <div class="uk-navbar-center">
+            <a class="uk-navbar-item uk-logo" href="Index.html"><img src="images/logo.svg" width="36px"></a>
+        </div>
+    </div>
+    <!-- desktop -->
+    <nav class="uk-navbar-container uk-navbar-transparent c-pink uk-visible@s" uk-navbar uk-sticky>
+        <div class="uk-navbar-center">
+            <div class="uk-navbar-center-left">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="about.html">About</a></li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="uk-navbar-item uk-logo" href="Index.html"><img src="images/logo.svg" width="36px"></a>
+
+            <div class="uk-navbar-center-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="playground.html">Playground</a></li>
+                    <li class=""><a href="file/Resume_UXEngineer_ZoeLo_p.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+</header>
+
+<body>
+    <div id="Divtitle" class="uk-container uk-container-expand uk-text-center c-pink uk-padding-large">
+        <section>
+            <div class="content">
+                <h2>Playground</h2>
+                <h2>Playground</h2>
+            </div>
+        </section>
+    </div>
+
+
+
+</body>
+
+<script>
+    window.onscroll = function (e) {
+        let nav = document.querySelector("nav");
+        if (window.scrollY > 0) {
+            nav.classList.add("nav-scroll");
+        } else {
+            nav.classList.remove("nav-scroll");
+        }
+    }
+</script>
+
+</html>
