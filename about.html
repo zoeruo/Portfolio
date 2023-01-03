@@ -20,8 +20,7 @@
                 <li><a class="sidenav-text uk-text-default" href="about.html">about</a></li>
                 <li><a class="sidenav-text uk-text-default" href="projects.html">Projects</a></li>
                 <li><a class="sidenav-text uk-text-default" href="playground.html">Playground</a></li>
-                <li><a class="sidenav-text uk-text-default" href="file/Resume_ZoeLo.pdf"
-                        target="_blank">Resume</a></li>
+                <li><a class="sidenav-text uk-text-default" href="file/Resume_ZoeLo.pdf" target="_blank">Resume</a></li>
             </ul>
         </div>
     </div>
@@ -59,19 +58,63 @@
 
 </header>
 
-<body>
-    <div id="Divtitle" class="uk-container uk-container-expand uk-text-center c-pink uk-padding-large">
-        <section>
-            <div class="content">
-                <h2>ZoeLo</h2>
-                <h2>ZoeLo</h2>
+<body class="">
+    <div id="" class="uk-container uk-container-xsmall uk-text-center uk-padding-large">
+        <h2>Chia-Jou (Zoe) Lo</h2>
+        <p>3+ years of experience building official websites and efficient target-oriented websites for users.<br />
+            Pursuing MS in HCI at the University of the Maryland, College Park.<br />
+            Looking to create more value with accessible websites.
+        </p>
+    </div>
+
+    <div id="" class="uk-container uk-container-xsmall uk-text-center uk-padding">
+        <button class="btn_arrow"><img src="Images/downarrow.svg" width="40px" /><br />
+            Go To Unofficial
+        </button>
+    </div>
+
+
+    <div id="DivUnofficial" class="uk-hidden">
+        <div class="uk-container uk-container-expand uk-text-center c-pink uk-padding-large">
+            <div class="div_about_img">
+                <img src="Images/about.jpg" />
             </div>
-        </section>
+        </div>
+
+        <div id="" class="uk-container uk-container-expand uk-text-center c-pink">
+            <div class="titleindex">
+                <section>
+                    <div class="content">
+                        <h3>ZoeLo</h3>
+                        <h3>ZoeLo</h3>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id=""
+            class="uk-container uk-container-expand uk-text-center uk-padding-large c-pink uk-padding-remove-top">
+            <p>Besides designing, coding, and playing the piano, I enjoy many other activities. The path to exploring
+                new things will always continue.<br />
+                I’m into outdoor activities, especially the ones relating to water and the ocean. In other words, I do
+                scuba diving, freediving, and stand-up paddle boarding. <br />
+                I’ve always found happiness and tranquility in
+                the sea. <br />
+                Life with arts always tastes better. That’s something that has never changed from the bottom of my
+                heart.<br />
+                Recent discovery: I actually do enjoy cooking!</p>
+        </div>
+    </div>
+
     </div>
 
 
 
+
 </body>
+
+<footer>
+    <div class="uk-text-center uk-padding">© 2022. All Rights Reserved to Zoe Lo.</div>
+</footer>
 
 <script>
     window.onscroll = function (e) {
@@ -82,6 +125,16 @@
             nav.classList.remove("nav-scroll");
         }
     }
+    document.querySelector('.btn_arrow').addEventListener('click', function (event) {
+        event.preventDefault();
+        var target = document.querySelector('#DivUnofficial');
+        if (target.classList.contains('uk-hidden')) {
+            target.classList.remove('uk-hidden');
+        } 
+        // else {
+        //     target.classList.add('uk-hidden');
+        // }
+    });
 </script>
 
 </html>

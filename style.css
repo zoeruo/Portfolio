@@ -277,3 +277,22 @@ h3 span {
     padding-top: 20%;
     border-radius: 50%;
 }
+
+.div_about_img img{
+    border:2px #3a4454 dashed;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #F5DDDD;
+}
+.btn_arrow{
+    all:unset;
+    cursor:pointer;
+}
+.btn_arrow:hover{
+    color:#48acf0;
+}
