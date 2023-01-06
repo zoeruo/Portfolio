@@ -4,6 +4,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>ZoeLo</title>
     <link rel="stylesheet" href="uikit/dist/css/uikit.min.css">
     <link rel="stylesheet" href="style.css">
@@ -11,6 +12,15 @@
     <script src="uikit/dist/js/uikit.min.js"></script>
     <script src="uikit/dist/js/uikit-icons.min.js"></script>
     <link rel="icon" type="image/x-icon" href="images/logo.svg">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C8LTD53K25"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-C8LTD53K25');
+    </script>
 </head>
 
 <header>
@@ -130,7 +140,7 @@
         var target = document.querySelector('#DivUnofficial');
         if (target.classList.contains('uk-hidden')) {
             target.classList.remove('uk-hidden');
-        } 
+        }
         // else {
         //     target.classList.add('uk-hidden');
         // }
