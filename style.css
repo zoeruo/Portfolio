@@ -3,6 +3,10 @@
 body {
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
+.c-white{
+    color:#F6F7FB;
+
+}
 
 .c-pink {
     background-color: #F5DDDD;
@@ -14,6 +18,10 @@ body {
 
 .c-lightblue{
     color:#48acf0;
+}
+
+.c-darkgray{
+    background-color:#34445c;
 }
 
 #DivCampaign {
@@ -28,12 +36,13 @@ body {
 
 #DivCampaign span {
     cursor: pointer;
-    color: #F5DDDD;
+    color: black;
     border-bottom: 2px #3a4454 dashed;
 }
 
 #DivCampaign span:hover,  #DivCampaign span:active{
-    color: black;
+    color: whitesmoke;
+    text-shadow:1px 1px 1px #48acf0, 3px 3px 1px #48acf0;
 }
 
 #DivC #DivProjects h3 {
@@ -233,6 +242,7 @@ h3 span {
 
   .overlay label{
     color:black;
+    font-size: 1.5rem;
 
   }
 /* .waves {
@@ -296,4 +306,11 @@ h3 span {
 }
 .btn_arrow:hover{
     color:#48acf0;
+}
+
+.deeptitletext{
+    font-family: 'Unbounded', cursive;
+}
+.deepcontenttext{
+    font-family: 'Roboto', sans-serif;
 }
