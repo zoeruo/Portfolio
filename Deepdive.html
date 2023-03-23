@@ -13,6 +13,7 @@
         rel="stylesheet">
     <script src="uikit/dist/js/uikit.min.js"></script>
     <script src="uikit/dist/js/uikit-icons.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <link rel="icon" type="image/x-icon" href="images/logo.svg">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C8LTD53K25"></script>
@@ -25,50 +26,7 @@
     </script>
 </head>
 
-<header>
-    <div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
-        <div class="uk-offcanvas-bar sidenav-bar">
-            <ul class="uk-nav uk-nav-default ">
-                <li><a class="sidenav-text uk-text-default" href="about.html">about</a></li>
-                <li><a class="sidenav-text uk-text-default" href="projects.html">Projects</a></li>
-                <li><a class="sidenav-text uk-text-default" href="playground.html">Playground</a></li>
-                <li><a class="sidenav-text uk-text-default" href="file/Resume_ZoeLo.pdf" target="_blank">Resume</a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- mobile -->
-    <div id="DivMobileNav" class="uk-navbar-container uk-hidden@s" uk-navbar>
-        <div class="uk-navbar-left">
-            <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-toggle="target: #sidenav" uk-navbar-toggle-icon></a>
-        </div>
-        <div class="uk-navbar-center">
-            <a class="uk-navbar-item uk-logo" href="index.html"><img src="images/logo.svg" width="36px"></a>
-        </div>
-    </div>
-    <!-- desktop -->
-    <nav class="uk-navbar-container uk-navbar-transparent uk-visible@s nav-scroll" uk-navbar uk-sticky>
-        <div class="uk-navbar-center">
-            <div class="uk-navbar-center-left">
-                <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a href="about.html">About</a></li>
-                    <li>
-                        <a href="projects.html">Projects</a>
-                    </li>
-                </ul>
-            </div>
-            <a class="uk-navbar-item uk-logo" href="index.html"><img src="images/logo.svg" width="36px"></a>
-
-            <div class="uk-navbar-center-right">
-                <ul class="uk-navbar-nav">
-                    <li><a href="playground.html">Playground</a></li>
-                    <li class=""><a href="file/Resume_ZoeLo.pdf" target="_blank">Resume</a></li>
-                </ul>
-            </div>
-
-        </div>
-    </nav>
-
-</header>
+<div id="header"></div>
 
 <body class="c-darkgray">
     <div class="uk-container uk-text-center uk-padding">
@@ -82,14 +40,14 @@
     <div id="DivOverview" class="uk-container uk-container-small uk-padding-large">
         <div class="uk-grid-column-small uk-grid-row-large  uk-text-left uk-padding card-border" uk-grid>
             <div class="uk-margin-auto-vertical">
-                    <h3 class="deeptitletext c-white">Overview</h3>
-                    <p class="deepcontenttext c-white">
-                        DeepDive is a unique app is designed to introduce users to the sport of freediving, enabling
-                        them to log and monitor their dives in a single, user-friendly platform. Notably, the app stands
-                        out by offering freediving lessons and providing divers with an all-in-one tool to track their
-                        progress. The app's sleek design and intuitive interface make it a refreshing and
-                        straightforward tool for all freediving enthusiasts.
-                    </p>
+                <h3 class="deeptitletext c-white">Overview</h3>
+                <p class="deepcontenttext c-white">
+                    DeepDive is a unique app is designed to introduce users to the sport of freediving, enabling
+                    them to log and monitor their dives in a single, user-friendly platform. Notably, the app stands
+                    out by offering freediving lessons and providing divers with an all-in-one tool to track their
+                    progress. The app's sleek design and intuitive interface make it a refreshing and
+                    straightforward tool for all freediving enthusiasts.
+                </p>
             </div>
             <div class="uk-width-1-3@m">
                 <h3 class="deeptitletext c-white">Team members</h3>
@@ -105,7 +63,6 @@
                 <h3 class="deeptitletext c-white">Deliverables</h3>
                 <label class="deepcontenttext c-white">
                     Requirements analysis<br>
-                    Competitive analysis<br>
                     Audience and persona<br>
                     Task analysis<br>
                     Storyboards<br>
@@ -117,125 +74,160 @@
     <!-- problem statement -->
     <div id="DivProblemStatement" class="uk-container uk-container-small uk-padding-large">
         <h3 class="deeptitletext c-white">Problem Statement</h3>
-        <p class="deepcontenttext c-white">Diving is a thrilling and widely enjoyed sport, but it also poses risks when not executed with adequate training and safety measures. Although there are various resources available to help divers learn and keep track of their progress, such as instructor-led training, diving logs, and certification courses, there is a demand for a comprehensive mobile application that can assist divers in tracking their progress, learning new skills, and maintaining their safety.</p>
+        <p class="deepcontenttext c-white">Diving is a thrilling and widely enjoyed sport, but it also poses risks when
+            not executed with adequate training and safety measures. Although there are various resources available to
+            help divers learn and keep track of their progress, such as instructor-led training, diving logs, and
+            certification courses, there is a demand for a comprehensive mobile application that can assist divers in
+            tracking their progress, learning new skills, and maintaining their safety.</p>
     </div>
-     <!-- requirement analysis -->
-     <div id="DivRequirementAnalysis" class="uk-container uk-container-small uk-padding-large">
+    <!-- requirement analysis -->
+    <div id="DivRequirementAnalysis" class="uk-container uk-container-small uk-padding-large">
         <h3 class="deeptitletext c-white">Requirements Analysis</h3>
-        <p class="deepcontenttext c-white">Diving is a thrilling and widely enjoyed sport, but it also poses risks when not executed with adequate training and safety measures. Although there are various resources available to help divers learn and keep track of their progress, such as instructor-led training, diving logs, and certification courses, there is a demand for a comprehensive mobile application that can assist divers in tracking their progress, learning new skills, and maintaining their safety.</p>
+        <h5 class="deeptitletext c-titleblue">Unique Selling Points</h5>
+        <p class="deepcontenttext c-white">This app is one of its kind to offer lessons on freediving. It also allows
+            divers to track their journey all in one place. It would be refreshingly cool and easy to use.</p>
+        <h5 class="deeptitletext c-titleblue">Business Goals</h5>
+        <p class="deepcontenttext c-white">
+        <ul>
+            <li class="deepcontenttext c-white">Attract new freedivers and retain existing ones</li>
+            <li class="deepcontenttext c-white">Understanding freedivers’ patterns and performances through Data
+                collection and analysis</li>
+            <li class="deepcontenttext c-white">Allowing learners to subscribe to a premium version that provides
+                personalized learning and tracking</li>
+            <li class="deepcontenttext c-white">Motivating game mechanics</li>
+            <li class="deepcontenttext c-white">Advertising and Other Revenue</li>
+            <li class="deepcontenttext c-white">In-app purchases</li>
+        </ul>
+        </p>
+        <h5 class="deeptitletext c-titleblue">User Goals</h5>
+        <p class="deepcontenttext c-white">
+        <ul>
+            <li class="deepcontenttext c-white">Learn more about the freediving sport</li>
+            <li class="deepcontenttext c-white">Improve their skills and techniques</li>
+            <li class="deepcontenttext c-white">Track their training progress</li>
+            <li class="deepcontenttext c-white">Gain safety tips and follow the guidelines</li>
+        </ul>
+        </p>
+        <h5 class="deeptitletext c-titleblue">Target System Configuration</h5>
+        <p class="deepcontenttext c-white">
+        <ul>
+            <li class="deepcontenttext c-white">iPhone - not compatible with android for initial version</li>
+            <li class="deepcontenttext c-white">Requires iOS 12.0 or later</li>
+            <li class="deepcontenttext c-white">Apple watch ultra (with GPS+Cellular)</li>
+        </ul>
+        </p>
+        <h5 class="deeptitletext c-titleblue">Usability Objectives</h5>
+        <p class="deepcontenttext c-white">
+        <ul>
+            <li class="deepcontenttext c-white">Task success rate - Users should be able to finish around 90% of the
+                tasks</li>
+            <li class="deepcontenttext c-white">User retention - The number of lessons completed dives logged by users
+                should be substantial</li>
+            <li class="deepcontenttext c-white">Satisfaction - Reach at least 3 points out of 5 in the customer feedback
+            </li>
+        </ul>
+        </p>
     </div>
 
-    <!-- information architecture -->
-    <div id="DivIA" class="uk-container uk-container-small uk-padding-large">
-        <h3>Redesign Process&nbsp;&nbsp;/&nbsp;&nbsp;<span>Information Architecture</span></h3>
-        <div class="uk-padding">
-            <h4>The Official Website</h4>
-            <p>After understanding the old website's structure, I added components and categorized the information.
-                For
-                instance, people can find common services under the Health Information section.  In addition, I
-                canceled
-                the subscription function since no more than a hundred people were still subscribing. Instead, I
-                added a
-                section for the general public to download the newsletters.</p>
-            <img src="images/IA_CHW.svg" class="uk-width-1-1">
-        </div>
-        <div class="uk-padding">
-            <h4>Multi-Language Website</h4>
-            <p>The international website was designed to provide simpler but useful and clear information. As for
-                the
-                Leading Specialties, editors have two options for adding content. One is to select articles from the
-                departments' websites, which departments' members edited, and insert them into the section; the
-                other is
-                to insert brand new articles. </p>
-            <img src="images/IA_ihs.svg" class="uk-width-1-1">
-        </div>
-        <div class="uk-padding">
-            <h4>Departments Websites</h4>
-            <p>About is the homepage of the website. The eight sections below are the functions the website
-                provides.
-                Every department can choose to add or remove the sections. For example, editors can remove the
-                Events
-                link from the menu if a department doesn't want to include event information or doesn't even hold
-                events.</p>
-            <img src="images/IA_dept.svg" class="uk-width-1-1">
-        </div>
-        <div class="uk-padding">
-            <h4>Content Management Website</h4>
-            <p>The website includes content management and authority management function. By defining each role's
-                access
-                to the website’s contents and assigning roles to accounts, employees in the hospital can log in to
-                the
-                system and edit the parts they are responsible for.</p>
-        </div>
-
+    <!-- target audience -->
+    <div id="DiveTargetAudience" class="uk-container uk-container-small uk-padding-large">
+        <h3 class="deeptitletext c-white">Target Audience</h3>
+        <p class="deepcontenttext c-white">"Divers age 16 to 35" is the main target.</p>
+        <h5 class="deeptitletext c-titleblue">Personas</h5>
+        <img src="images/PERSONA 1.png" class="uk-width-1-1 uk-padding-small">
+        <img src="images/PERSONA 2.png" class="uk-width-1-1 uk-padding-small">
+        <img src="images/PERSONA 3.png" class="uk-width-1-1 uk-padding-small">
     </div>
 
-
-    <!-- lo-fi -->
-    <div id="DivLowFidelity" class="uk-container uk-container-small uk-padding-large">
-        <h3>Redesign Process&nbsp;&nbsp;/&nbsp;&nbsp;<span>Low-fidelity Prototyping</span></h3>
-        <p>With the clock ticking, I quickly drew the flows and confirmed with the system analyst that the database
-            design would support the functions I wanted to provide to the users. </p>
-        <img src="images/CHW_wireframing.png" class="uk-width-1-1">
+    <!-- storyboard -->
+    <div id="DivStoryBoard" class="uk-container uk-container-small uk-padding-large">
+        <h3 class="deeptitletext c-white">Storyboard</h3>
+        <img src="images/storyboards.png" class="uk-width-1-1">
     </div>
 
-    <!-- high-fi -->
-    <div id="DivHighFidelity" class="uk-container uk-container-small uk-padding-large">
-        <h3>Redesign Process&nbsp;&nbsp;/&nbsp;&nbsp;<span>High-fidelity Prototyping</span></h3>
-        <p>High-fidelity Prototyping allowed me to discuss the details and styling of content on different screen sizes
-            with the deputy superintendent. Based on the hospital's logo, which contains an orchid with a tenet meant to
-            serve the public with charity, I opted for a warm look to convey the aim to the general public.</p>
-        <img src="images/CHW_highfidelity.png" class="uk-width-1-1">
+    <!-- IA -->
+    <div id="DivInformationArchitecture" class="uk-container uk-container-small uk-padding-large">
+        <h3 class="deeptitletext c-white">Information Architecture</h3>
+        <img src="images/IA.png" class="uk-width-1-1">
+        <p class="deepcontenttext c-white">The “Deepdive” app focuses on helping users keep track of their learning
+            progress. Besides providing an overview of the freediving stats, we include the journey into our scope. </p>
+        <p class="deepcontenttext c-white">Under “Learn,” we have “Lessons” and “Practice.” For the freediving sport,
+            many on-land practices can help divers improve their freediving skills(e.g., breathing exercises,
+            stretching, cardiovascular training, strength training, and mental preparation). These on-land practices
+            will be included in the “Practice” session. In contrast, the other in-water techniques(e.g., equalization
+            techniques, safety tips, respect for the environment, relaxation techniques, equipments, and diving
+            techniques) will be included in the “Lessons” session.</p>
     </div>
 
-    <!-- design -->
-    <div id="DivDesign" class="uk-container uk-container-small uk-padding-large">
-        <h3>Redesign Process&nbsp;&nbsp;/&nbsp;&nbsp;<span>Designs</span></h3>
-        <div class="uk-padding">
-            <h4>Multi-Language Website</h4>
-            <p>Users can switch languages from the upper right corner on every page. The editors can edit the specific
-                language page instead of inserting information for all three languages. When a user switches the
-                language on a page with no corresponding language, the user will be redirected to the previous page.</p>
-            <img src="images/CHW_09.webp" class="uk-width-1-1">
-        </div>
-        <div class="uk-padding">
-            <h4>The Official Website&nbsp;&nbsp;/&nbsp;&nbsp;Newsletter</h4>
-            <p>The newest volume is displayed at the top. When a mouse hovers over a volume, it will flip to show its
-                title and summary. People can download them simply with a click.</p>
-            <img src="images/CHW_13.webp" class="uk-width-1-1">
-        </div>
-        <div class="uk-padding">
-            <h4>404 Not Found</h4>
-            <p>To create a good experience for users, I customized a 404 page to inform them that the article is gone.
-            </p>
-            <video src="images/errorpage.mp4" width="1800" loop muted playsinline uk-video="autoplay: inview"></video>
-        </div>
-
-
+    <!-- Paper Prototype -->
+    <div id="DivPaperPrototype" class="uk-container uk-container-small uk-padding-large">
+        <h3 class="deeptitletext c-white">Paper Prototype</h3>
+        <h5 class="deeptitletext c-titleblue">Logging a new dive</h5>
+        <img src="images/PP00.png" class="uk-width-1-1">
     </div>
 
-    <!-- Development -->
-    <div id="DivDevelopment" class="uk-container uk-container-small uk-padding-large">
-        <h3>Development</h3>
-        <p>Our team used .NET to build the four websites. As soon as I confirmed the design, I started to develop the
-            websites with HTML, CSS, and JavaScript. Other engineers started from the back-end codes. The schedule was
-            intense. Due to the time limit, we were developing and testing simultaneously. When the project was about
-            80% to completion, my teammates withdrew from the project to work on other systems. I finished the websites
-            and published them on my own. In the development process, I received feedback directly and improved the
-            functions at every stage by collecting their demands.</p>
+    <!-- Wireframes -->
+    <div id="DivWireframes" class="uk-container uk-container-small uk-padding-large">
+        <h3 class="deeptitletext c-white">Wireframes</h3>
+        <h5 class="deeptitletext c-titleblue">1. Logging a new dive</h5>
+        <img src="images/wireframe00.png" class="uk-width-1-1">
+        <h5 class="deeptitletext c-titleblue">2. Starting a lesson</h5>
+        <img src="images/wireframe01.png" class="uk-width-1-1">
+        <h5 class="deeptitletext c-titleblue">3. Read the summary and overview of your tracking data</h5>
+        <img src="images/wireframe02.png" class="uk-width-1-1">
     </div>
 
-    <!-- Results -->
-    <div id="DivResults" class="uk-container uk-container-small uk-padding-large">
-        <h3>Results</h3>
-        <p>Since implementing the new responsive website, we have seen a significant increase in online appointments and
-            international patients. In addition, I have received positive feedback from the users about the concise and
-            straightforward functions, allowing them to show people their features and saving them a large proportion of
-            their time.</p>
+    <!-- High Fidelity -->
+    <div id="DivHighFIdelity" class="uk-container uk-container-small uk-padding-large">
+        <h3 class="deeptitletext c-white">Glimpse into High-fidelity </h3>
+        <img src="images/highfidelity.png" class="uk-width-1-1">
     </div>
 
-    <div class="uk-container uk-container-small uk-padding-large">
-        <img src="images/CHW_05.webp" class="uk-width-1-1">
+    <!-- Future Steps -->
+    <div id="DivFutureSteps" class="uk-container uk-container-small uk-padding-large">
+        <h3 class="deeptitletext c-white">Future Steps</h3>
+        <p class="deepcontenttext c-white">
+        <ul>
+            <li class="deepcontenttext c-white">Apple Watch Interface: Besides the mobile app, we plan to explore the
+                interface for the Apple Watch tracking app. We’ll maintain the same visual styles as the mobile app. But
+                since the Apple Watch has a small screen, we’ll design toward an intuitive, easy-to-use, and visually
+                appealing UI with larger buttons and easy-to-read text. </li>
+            <li class="deepcontenttext c-white">Choosing appropriate data sensors: Understand the sensors needed for
+                freediving data and choose reliable and accurate sensors that can be accessed through the Apple Watch.
+            </li>
+            <li class="deepcontenttext c-white">Allowing learners to subscribe to a premium version that provides
+                personalized learning and tracking</li>
+            <li class="deepcontenttext c-white">Usability Test: Testing the prototype with a group of users to identify
+                usability issues and make further adjustments.</li>
+            <li class="deepcontenttext c-white">Incorporate safety features: Since freediving is an extreme sport,
+                safety is paramount in freediving. Any careless can lead to serious issues. Therefore, we will explore
+                the possible safety features for our app.(e.g., depth alarm, emergency contact information)</li>
+        </ul>
+        </p>
+    </div>
+
+    <!-- Takeaways -->
+    <div id="DivTakeaways" class="uk-container uk-container-small uk-padding-large">
+        <h3 class="deeptitletext c-white">Takeaways</h3>
+        <p class="deepcontenttext c-white">
+        <ul>
+            <li class="deepcontenttext c-white">Simply the UI: The interface should be straightforward and easy to use,
+                ensuring that users can access information about diving journey, dive logs, and lessons quickly. </li>
+            <li class="deepcontenttext c-white">Considering more complex and interesting tasks: We may find greater
+                opportunities for improvement by considering and exploring additional possibilities. The inspiration can
+                come from the competitive analysis we performed.
+            </li>
+            <li class="deepcontenttext c-white">Consider safety features: Safety should always be among the top
+                priorities when it comes to designing a freediving app. We should reconsider the possibilities to
+                integrate the features into the app in the future.</li>
+            <li class="deepcontenttext c-white">Simplified but focused scenario: The scenario should be focused on a
+                specific user’s motivations, goals, challenges, and actions. We don’t need to include many steps to
+                create a helpful user scenario.</li>
+            <li class="deepcontenttext c-white">Interesting and focused persona: We learned how to make persona
+                interesting but also include necessary information that can help with design such as pain-points, needs,
+                behavioral traits, goals and context of use.</li>
+        </ul>
+        </p>
     </div>
 
 </body>
@@ -245,6 +237,9 @@
 </footer>
 
 <script>
+    $(function () {
+        $("#header").load("header.html");
+    });
     // window.onscroll = function (e) {
     //     let nav = document.querySelector("nav");
     //     if (window.scrollY > 0) {
@@ -253,6 +248,8 @@
     //         nav.classList.remove("nav-scroll");
     //     }
     // }
+
+
 
 </script>
 
